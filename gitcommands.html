@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <title>Version Control System</title>
+<style>
+h1{
+  text-align: center;
+  color:#961283;
+}
+body{
+  background:#8cdbd3;
+  font-style: italic;
+}
+img{
+  height: 150px;
+  width: 150px;
+  margin-left: 150px;
+  border: 1px solid black;
+}
+
+.myDiv{
+  background-color:#db9884;
+  margin-left: 5px;
+  color:#542517
+  text-align: center;
+}
+.myDiv2{
+  background-color:#c7367c;
+  margin-left: 5px;
+  color:#542517
+  text-align: center;
+}
+.myDiv1{
+  background-color:#c280c4;
+  margin-left: 5px;
+  color:#3f67d4;
+  text-align: center;
+}
+td{
+  margin-left: 10px;
+
+}
+li{
+    color:#60126e;
+    font-size: 20px;
+    align:center;
+
+}
+</style>
+</head>
+<body>
+  <h1 style=background-color:#e6a8c5> VERSION CONTROL SYSTEM </h1>
+   <table style= width=90% align="center" >
+  <tr>
+  <td width=50% >
+  <br>
+  <div class="myDiv2">
+  <b><font face="Arial"><h2>What is a “Version Control System”?</h2></font></b><br>
+  <img src="VCS.jpg"/>
+  <h3><p>Version control systems are a category of software tools that helps record changes to files by keeping a track of modifications done to the code.</p></h3>
+  <br>
+  </div>
+  <br>
+  </td>
+  <td width=50%>
+    <div class="myDiv1">
+    <h2><b><font face="Arial">Use of Version Control System:</font></b><br></h2>
+    <ol>
+      <br><br><br>
+      <h3><li><b>A repository:</b> It can be thought as a database of changes. It contains all the edits and historical versions (snapshots) of the project.</li>
+      <li><b>Copy of Work (sometimes called as checkout):</b>It is the personal copy of all the files in a project. You can edit to this copy, without affecting the work of others and you can finally commit your changes to a repository when you are done making your changes.</li>
+      <br><br>
+    </ol></h3>
+  </div>
+</td>
+</tr>
+</table>
+  <div class="myDiv">
+  <br>
+  <table style="background-color:#FFFFE0;" border=2 width=90% align="center" border="solid">
+  <th colspan=3>
+  <b><font face="Arial"><h4>Types of Version Control Systems:</h4></font></b>
+  </th>
+  <tr>
+  <td>
+  <ul>
+    <li><b><u>Local Version Control Systems</b></u></li><br>
+      <img src="LVCS.png"/><br>
+      Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
+        To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control.
+   </td>
+  <td>
+    <li><b><u>Centralized Version Control Systems</b></u></li><br>
+      <img src="CVC.png"/><br>
+      The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, Centralized Version Control Systems (CVCSs) were developed. These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this has been the standard for version control.
+   </td>
+   <td>
+    <li><b><u>Distributed Version Control Systems</li></b></u><br>
+      <img src="DVC.png"/><br>
+      This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
+  </ul>
+</td>
+  <br>
+  </div>
+  <br>
+</body>
+</html>
